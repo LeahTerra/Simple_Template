@@ -1,12 +1,13 @@
 body { 
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-wrap: wrap;
     }
 
 /* Nav Bar CSS */
 
 .nav-bar {
     display: flex; min-height: 75px; 
-    background-color: #49505F; 
+    background-color: rgb(70, 102, 110); 
     justify-content: center;
     color: white
     }
@@ -14,6 +15,7 @@ body {
     display: flex; 
     width: 75%; 
     list-style: none;
+    flex-wrap: wrap;
     }
     
 .nav-buttons {
@@ -26,7 +28,7 @@ body {
 
     border-style: solid; 
     border-width: 1px; 
-    border-color: #646d7c;
+    border-color: #ffffff;
     }
 
 /* Welcome section */
@@ -65,7 +67,7 @@ body {
 
 #sec-2 {
     background-color: white;
-    height: 750px;
+    height: 650px;
     display: flex ;
 }
 
@@ -76,33 +78,33 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-.column {
+.sec-2-container > .column {
     display: flex;
     margin: auto;
-    height: 450px;
+    height: 500px;
     flex-basis: 300px;
     flex-direction: column;
     align-items: center;
-    background: rgb(243, 243, 243);
+    background: #F2F2F2;
+    border-radius: 10px;
+    border-color: white;
 }
 
 .column > img {
-    height: 180px;
-    width: 85%;
-    padding-top: 2%;
+    height: 200px;
+    width: 100%;
 }
 
-.column > h2 {
-}
 .column > p {
     width: 80%;
+    color: rgb(74, 87, 87);
 }
 
 .col-but {
     text-align: center;
-    margin: auto;
     padding-top: 4%;
     height: 30px;
     width: 105px;
@@ -110,25 +112,79 @@ body {
 }
 
 #but1 {
-    background: rgb(24, 177, 24);
+    line-height: 100%;
+    background: rgb(80, 182, 80);
     border-radius: 5px;
     border-style: solid;
     border-width: 5px;
-    border-color: rgb(29, 172, 29);
+    border-color: rgb(77, 180, 77);
 }
 
 #but2 {
-    background: rgb(236, 111, 89);
+    background: rgb(230, 128, 111);
     border-radius: 5px;
     border-style: solid;
     border-width: 5px;
-    border-color: rgb(243, 112, 89);
+    border-color: rgb(238, 130, 110);
 }
 
 #but3 {
-    background: rgb(24, 179, 171);
+    background: rgb(80, 179, 174);
     border-radius: 5px;
     border-style: solid;
     border-width: 5px;
-    border-color: rgb(26, 175, 168);
+    border-color: rgb(73, 182, 176);
+}
+
+/* Double Column Section */
+
+#sec-3 {
+    background-color: white;
+    height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sec-3-container {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sec-3-container > .column {
+    display: flex;
+    margin: auto;
+    height: 100% auto;
+    flex-basis: 500px;
+    flex-direction: column;
+    align-items: center;
+    background: #F2F2F2;
+    border-radius: 10px;
+    border-color: white;
+}
+
+.sec-3-container > .column > img {
+    height: 300px;
+    width: 100%;
+}
+
+.sec-3-container > .column > p {
+    width: 80%;
+    color: rgb(74, 87, 87);
+}
+
+.read-more {
+    height: 50px;
+    width: 150px;
+    background: rgb(255, 255, 255);
+    color: rgb(112, 111, 111);
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(206, 206, 206);
 }
